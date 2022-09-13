@@ -20,14 +20,14 @@
   
   
   <input type="text" id="num1" name="num1">
+    
   
+  <button type="button" value="+" id="0" onclick="setOperacao(this.value)">+</button>
+  <button type="button" value="-" id="1" onclick="setOperacao(this.value)">-</button>
+  <button type="button" value="*" id="2" onclick="setOperacao(this.value)">*</button>
+  <button type="button" value="/" id="3" onclick="setOperacao(this.value)">/</button><br>
   
-  <input type="button" value="+" id="0" onclick="setOperacao(this.value)">
-  <input type="button" value="-" id="1" onclick="setOperacao(this.value)">
-  <input type="button" value="*" id="2" onclick="setOperacao(this.value)"> 
-  <input type="button" value="/" id="3" onclick="setOperacao(this.value)"><br>
-  
-  
+  <input class="sem-borda" type="text" id="operador" name="operador"><br>
   <input class="sem-borda" type="text" id="operacao" name="operacao"><br>
   <input type="text" id="num2" name="num2"><br><br>
   
@@ -36,10 +36,25 @@
 
 <script>
         
-          let op = function setOperacao(op) {
-			document.getElementById('operacao').value = op;
+          function setOperacao(op) {
+			document.getElementById('operador').value = op;
+			switch(op) {
+				case "+": 
+			document.getElementById('operacao').value = 0;
+			break;
+				case "-": 
+			document.getElementById('operacao').value = 1;
+			break;
+				case "*": 
+			document.getElementById('operacao').value = 2;
+			break;
+				case "/": 
+			document.getElementById('operacao').value = 3;
+			break;
+				}
+			//alert(op);
             }
-        }
+            
     </script>
 
 </body>
