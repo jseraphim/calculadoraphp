@@ -22,10 +22,10 @@ class Calculadora {
 	
 }
 	
-$num1 = 1.0;
-$num2 = 2.0;
+$num1 = htmlspecialchars($_POST['num1'];
+$num2 = htmlspecialchars($_POST['num2'];;
 
-$operacao = 3;
+$operacao = htmlspecialchars($_POST['operacao'];;
 
 $calculadora = new Calculadora();
 
