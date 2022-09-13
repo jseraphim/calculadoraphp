@@ -17,12 +17,30 @@
 
 <form action="/calculadora.php">
   <input class="sem-borda" type="text" id="resultado" name="resultado"><br>
-  <input type="text" id="num1" name="num1"><br>
+  
+  
+  <input type="text" id="num1" name="num1">
+  
+  
+  <input type="button" value="+" id="0" onclick="setOperacao(this.value)">
+  <input type="button" value="-" id="1" onclick="setOperacao(this.value)">
+  <input type="button" value="*" id="2" onclick="setOperacao(this.value)"> 
+  <input type="button" value="/" id="3" onclick="setOperacao(this.value)"><br>
+  
+  
   <input class="sem-borda" type="text" id="operacao" name="operacao"><br>
   <input type="text" id="num2" name="num2"><br><br>
+  
   <input type="submit" value="=">
 </form>
 
+<script>
+        
+          let op = function setOperacao(op) {
+			document.getElementById('operacao').value = op;
+            }
+        }
+    </script>
 
 </body>
 </html>
