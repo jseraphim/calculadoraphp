@@ -1,5 +1,5 @@
 <?php
-// Enter your code here, enjoy!
+
 class Calculadora {
 	
 
