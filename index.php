@@ -17,9 +17,17 @@ require_once 'calculadora.php';
 
 
 <form action="" method="post">
-  <input class="sem-borda" type="text" id="resultado" name="resultado"><br>
+ <input class='sem-borda' type='text' id='resultado' name='resultado'>
   
+	<?php
+// Verifica se algo foi postado
+if ( ! empty( $_POST ) ) {
+	//CÓDIGO AQUI!!
+}
+	?>
+
   
+  <br>
   <input type="text" id="num1" name="num1">
     
   
