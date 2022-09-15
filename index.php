@@ -11,6 +11,7 @@
 </head>
 
 <body>
+require_once 'calculadora.php';
 
 <h2>Calculadora</h2>
 
