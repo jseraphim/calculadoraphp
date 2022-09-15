@@ -22,7 +22,7 @@ require_once 'calculadora.php';
 	<?php
 // Verifica se algo foi postado
 if ( ! empty( $_POST ) ) {
-	//CÓDIGO AQUI!!
+	calculadora();
 }
 	?>
 
