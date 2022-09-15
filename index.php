@@ -16,7 +16,7 @@ require_once 'calculadora.php';
 <h2>Calculadora</h2>
 
 
-<form action="/calculadora.php">
+<form action="" method="post">
   <input class="sem-borda" type="text" id="resultado" name="resultado"><br>
   
   
